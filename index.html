@@ -24,13 +24,13 @@
     </header>
 
     <main><!-- Contenido principal -->
-        <section><!-- Home -->
+        <section id="home_section"><!-- Home -->
             <h1>Home</h1>
             <p>Bienvenido a nuestra tienda de muebles. Encuentra los mejores diseños para tu hogar.</p>
             <img src="img/Presentacion.png" alt="Presentacion de Nordic" class="home-img">
         </section>
 
-        <section><!-- Catalogo -->
+        <section class="espacio_lateral"><!-- Catalogo -->
             <h2>Catalogo</h2>
 
             <div class="producto-tarjeta">
@@ -63,7 +63,7 @@
 
             <div class="producto-tarjeta">
                 <img src="img/Estanteria Minimalista.png" alt="Estanteria Minimalista" class="producto-img">
-                <h3>Estanteria Minimalista</h3>
+                <h3>Estanteria Mini</h3>
                 <p>Precio: $400</p>
                 <button>Añadir al carrito</button>
             </div>
@@ -77,7 +77,7 @@
 
             <div class="producto-tarjeta">
                 <img src="img/Escritorio Vintage.png" alt="Escritorio Vintage" class="producto-img">
-                <h3>Escritorio Vintage</h3>
+                <h3>Escritorio Vint</h3>
                 <p>Precio: $150</p>
                 <button>Añadir al carrito</button>
             </div>
@@ -90,29 +90,76 @@
             </div>
         </section>
 
-        <section><!-- Ideas -->
+        <section class="espacio_lateral_idea"><!-- Ideas -->
             <h2>Ideas</h2>
 
             <div class="idea-tarjeta">
                 <img src="img/Idea 1.png" alt="Decoracion Sala de Estar" class="idea-img">
-                <h3>Decoracion Sala de Estar</h3>
-                <p>Inspírate con estas ideas para decorar tu sala de estar con muebles modernos y funcionales.</p>
+                <div class="idea_texto">
+                    <div class="texto-contenedor">
+                        <h3>Decoracion Sala de Estar</h3>
+                        <p>
+                            El corazón de tu hogar merece un diseño que cuente tu historia. Descubre cómo transformar tu sala de estar en un
+                            refugio de calma y sofisticación, combinando texturas suaves con líneas puras que invitan al descanso absoluto.
+                            Desde la iluminación perfecta hasta el sofá ideal, aquí encontrarás la inspiración para crear momentos inolvidables.
+                        </p>
+                    </div>
+                    <div class="autor-contenedor">
+                        <img src="https://img.freepik.com/foto-gratis/retrato-hombre-blanco-aislado_53876-40306.jpg?semt=ais_hybrid&w=740&q=80" alt="Autor" class="autor-img">
+                        <div class="autor-texto">
+                            <p>Saul Garcia</p>
+                            <p>Diseñador de interiores</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="idea-tarjeta">
                 <img src="img/Idea 2.png" alt="Organizacion de Espacios Pequenos" class="idea-img">
-                <h3>Organizacion de Espacios Pequenos</h3>
-                <p>Descubre como maximizar el espacio en habitaciones pequeñas con muebles multifuncionales.</p>
+                <div class="idea_texto">
+                    <div class="texto-contenedor">
+                        <h3>Organizacion de Espacios Pequenos</h3>
+                        <p>
+                            Tu hogar no se define por sus dimensiones, sino por la calidez que transmite. Descubre el potencial oculto de cada
+                            rincón y transforma la falta de espacio en una oportunidad para la creatividad. Con muebles inteligentes y
+                            organización vertical, te mostramos cómo un ambiente compacto puede convertirse en un refugio íntimo, ordenado y
+                            sorprendentemente amplio.
+                        </p>
+                    </div>
+                    <div class="autor-contenedor">
+                        <img src="https://hips.hearstapps.com/elle-es/assets/15/37/original/original-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg" alt="Autor" class="autor-img">
+                        <div class="autor-texto">
+                            <p>Maria Lopez</p>
+                            <p>Diseñadora de interiores</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="idea-tarjeta">
                 <img src="img/Idea 3.png" alt="Tendencias en Muebles 2025" class="idea-img">
-                <h3>Tendencias en Muebles 2025</h3>
-                <p>Explora las últimas tendencias en diseño de muebles para el año 2025 y dale un toque moderno a tu hogar.</p>
+                <div class="idea_texto">
+                    <div class="texto-contenedor">
+                        <h3>Tendencias en Muebles 2025</h3>
+                        <p>
+                            El futuro del diseño interior regresa a lo esencial. En 2025, la vanguardia se define por una conexión profunda con
+                            la naturaleza y la sostenibilidad consciente. Prepárate para recibir formas orgánicas, texturas crudas y materiales
+                            eco-amigables que no solo decoran, sino que respiran. Esta tendencia invita a desacelerar el ritmo, creando
+                            ambientes donde la tecnología invisible y la artesanía tradicional conviven en perfecta armonía.
+                        </p>
+                    </div>
+                    <div class="autor-contenedor">
+                        <img src="https://img.freepik.com/foto-gratis/hermosa-joven-latina-retrato-cara_53876-143238.jpg?semt=ais_hybrid&w=740&q=80" alt="Autor" class="autor-img">
+                        <div class="autor-texto">
+                            <p>Guadalupe Sanchez</p>
+                            <p>Diseñadora de interiores</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section><!-- Servicios -->
+        <section class="espacio_lateral"><!-- Servicios -->
             <h2>Servicios</h2>
             <div>
                 <h3>Envio Gratis</h3>
@@ -153,7 +200,7 @@
         </section>
 
         <section><!-- Metodos de pago -->
-            <h2>Metodos de pago</h2>
+            <h3>Metodos de pago</h3>
             <ul>
                 <li><a href="">Visa</a></li>
                 <li><a href="">Mastercard</a></li>
