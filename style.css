@@ -1,77 +1,106 @@
+/* Etiquetas global
+    - Elimina márgenes y padding por defecto
+    - Aplica box-sizing: border-box para que el ancho incluya padding/border
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Se define un color de fondo claro para una apariencia limpia */
 body {
     background-color: #F5F7FA;
 }
-
+/* Se define el color de fondo del header */
 header {
     background-color: white;
 }
-
-footer {
-    background-color: #34495E;
-}
-
+/* Estilos para la secciones del main
+    - Se aplica padding vertical para separar las secciones
+*/
 main section {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-
+/* Se define el color de fondo del footer */
+footer {
+    background-color: #34495E;
+}
+/* Estilos para los encabezados h1, h2 y h3 */
 h1, h2, h3 {
     font-family: "Poppins", sans-serif;
 }
-
+/* Estilos para párrafos, botones y listas */
 p, button, li {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
 }
-
+/* Estilos específicos para h1 */
 h1 {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
     text-align: center;
 }
-
+/* Estilos específicos para h2 */
 h2 {
     margin-bottom: 2.5rem;
     font-size: 2rem;
     text-align: center;
 }
-
+/* Estilos específicos para h3 */
 h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-
-#home_section {
-    padding-top: 3rem;
+/* Estilos para el banner superior */
+.top-banner {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 14px;
 }
-
+/* Estilos para la barra de navegación
+    - Se hace sticky para que permanezca visible al hacer scroll
+    - Se aplica un z-index alto para que esté por encima de otros elementos
+    - Se centra el contenido y se limita el ancho máximo
+*/
+.navegacion {
+    background-color: white;
+    padding: 15px 25px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Se eliminan los estilos por defecto de la lista de navegación */
+.lista-navegacion {
+    list-style: none;
+}
+/* Se estilizan los enlaces para que no tengan subrayado y tengan un color específico */
+.lista-navegacion a {
+    text-decoration: none;
+    color: #34495E;
+    font-weight: bold;
+}
+/* Contenedor con espacio lateral automático y ancho máximo */
 .espacio_lateral {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
     text-align: center;
 }
-
-.espacio_lateral_idea{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-    text-align: center;
-}
-
+/* Estilo para imagen de logo */
 .logo-img {
     width: 120px;
 }
-
+/* Estilo para imagen de home */
 .home-img {
     width: 100%;
 }
-
+/* Seccion de catalogo */
+/* Tarjeta con espacio lateral automático y ancho máximo para productos */
 .producto-tarjeta {
     display: inline-block;
     background-color: white;
@@ -81,13 +110,23 @@ h3 {
     padding: 1rem;
     margin: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Para que la badge absoluta se posicione dentro*/
+    position: relative;
 }
-
+/* Imagen de tarjeta de producto */
 .producto-img {
     width: 100%;
     border-radius: 1rem;
 }
-
+/* Seccion de ideas */
+/* Contenedor con espacio lateral automático y ancho máximo para ideas */
+.espacio_lateral_idea{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    text-align: center;
+}
+/* Tarjeta individual de idea */
 .idea-tarjeta {
     display: block;
     background-color: white;
@@ -99,7 +138,7 @@ h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }   
-
+/* Imagen de tarjeta de idea */
 .idea-img {
     display: inline-block;
     height: auto;
@@ -107,7 +146,7 @@ h3 {
     border-radius: 1rem;
     vertical-align: top;
 }
-
+/* Texto de tarjeta de idea */
 .idea_texto {
     display: inline-block;
     vertical-align: top;
@@ -115,7 +154,7 @@ h3 {
     margin-left: 2rem;
     text-align: left;;
 }
-
+/* Contenedor de texto dentro de la tarjeta de producto */
 .texto-contenedor {
     display: inline-block;
     min-height: 70%;
@@ -123,7 +162,7 @@ h3 {
     color: #555;
     line-height: 1.6;
 }
-
+/* Contenedor del autor dentro de la tarjeta de idea */
 .autor-contenedor {
     display: inline-block;
     text-align: left;
@@ -131,12 +170,19 @@ h3 {
     min-height: 0%;
     margin-top: 1rem;
 }
+/* Texto del autor dentro de la tarjeta de idea */
 .autor-texto {
     display: inline-block;
     margin-left: 1rem;
     vertical-align: bottom;
     color: #34495E;
 }
+/* Imagen del autor dentro de la tarjeta de idea 
+    - Imagen circular 45x45px
+    - Alineada al texto del autor
+    - Se ajusta la imagen para cubrir el contenedor sin distorsión
+    - Centrada en el contenedor
+*/
 .autor-img {
     width: 45px;
     height: 45px;
@@ -145,4 +191,46 @@ h3 {
     vertical-align: bottom;
     object-fit: cover;
     object-position: center;
+}
+/* Estilos para el botón de agregar al carrito */
+/* Badge de producto */
+.producto-badge {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    top : 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+/*Boton flotante position fixed
+    - Ubicado en la esquina inferior derecha
+    - z-index alto para estar por encima de otros elementos
+    - Sombra para dar efecto de profundidad
+    - Transición suave para el efecto hover
+*/
+.boton-carrito {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    border-radius: 30px;
+    background-color: white;
+    z-index: 1500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: .2s ease;
+}
+/* Efecto hover para el boton flotante */
+.boton-carrito:hover {
+    background-color: #F39C12;
+    color: white;
+}
+/* Seccion home */
+/* Ajuste de padding para la sección de inicio */
+#home_section {
+    padding-top: 3rem;
 }
