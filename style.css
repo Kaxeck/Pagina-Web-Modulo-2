@@ -91,6 +91,10 @@ h3 {
     font-weight: bold;
     font-size: 17px;
 }
+/* Icono de menu oculto por defecto */
+.icono-menu {
+    display: none;
+}
 .nav-izq {
     display: flex;
     flex-wrap: wrap;
@@ -378,8 +382,8 @@ h3 {
 /* Seccion pies de pagina */
 /* Margen y padding para secciones de footer */
 footer section {
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    padding: 10px 10px 20px 10px;
 }
 /* Color blanco para textos en el footer */
 footer h2, footer h3, footer p {
@@ -536,4 +540,178 @@ footer h2, footer h3, footer p {
 .boton-flotante:hover {
     background-color: white;
     color: #2C3E50;
+}
+
+/* Media Queries para diseño responsivo */
+/* Ajustes para pantallas con ancho máximo de 1024px */
+@media screen and (max-width: 1024px) {
+    /* Ajustes para el espacio lateral de contenedores */
+    .espacio_promociones, 
+    .espacio_lateral, 
+    .espacio_lateral_idea,
+    .servicios-contenedor {
+    max-width: 95%;
+    }
+    /* Ajustes para la imagen de la sección de ideas */
+    .idea-img {
+        width: 23%;
+    }
+    /* Mostrar icono de menu */
+    .icono-menu {
+        display: block;
+    }
+    /* Ocultar secciones de navegación */
+    .seccion-nav {
+        display: none;
+    }
+}
+/* Ajustes para pantallas con ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    /* Ajustes para la barra de navegación */
+    .navegacion {
+        padding: 10px 15px;
+    }
+    /* Ajustes para los elementos de navegación */
+    .nav-izq, .nav-der {
+        gap: 15px;
+    }
+    /* Ajustes para el espacio lateral de contenedores */
+    .espacio_promociones, 
+    .espacio_lateral, 
+    .espacio_lateral_idea,
+    .servicios-contenedor {
+        max-width: 95%; /* Aprovechar más pantalla en móvil */
+    }
+    /* Ajustes para las tarjetas de producto */
+    .producto-tarjeta {
+        width: 100%;
+        max-width: 260px;
+        margin: 1rem 1rem;
+    }
+    /* Ajustes para las tarjetas de idea */
+    .idea-tarjeta {
+        margin-bottom: 1.5rem;
+    }
+    /* Ajustes para la imagen de la sección de ideas */
+    .idea-img {
+        width: auto;
+        height: 160px;
+        margin-bottom: 1.3rem;
+        margin-top: 3rem;
+    }
+    /* Ajustes para el texto de la sección de newsletter */
+    .newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* Ajustes para el contenedor de newsletter */
+    .contenedor-newsletter {
+        width: 95%;
+    }
+    /* Ajustes para el formulario de suscripción */
+    .form-suscripcion {
+        height: auto;
+        margin-bottom: 30px;
+        
+    }
+    /* Ajustes para el contenedor del formulario de suscripción */
+    .contenedor-form-suscripcion {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    /* Ajustes para los inputs de suscripción */
+    .form-suscripcion input {
+        width: 70%;
+        height: 40px;
+        margin-right: 4px;
+        font-size: 1rem;
+    }
+    /* Ajustes para el botón de suscripción */
+    .form-suscripcion button {
+        width: 25%;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    /* Ajustes para el contenedor de contactanos y metodos de pago */
+    .contactanos-pagos {
+        align-items: flex-start;
+        margin-right: 1rem;
+    }
+}
+/* Ajustes para pantallas con ancho máximo de 480px */
+@media screen and (max-width: 480px) {
+    /* Ajustes para la barra de navegación */
+    .nav-izq, .nav-der {
+        gap: 10px;
+    }
+    /* Ajustes para las tarjetas de producto */
+    .producto-tarjeta {
+        width: 100%;
+        max-width: 220px;
+        margin: 1rem 0.5rem;
+    }
+    /* Ajustes para las tarjetas de idea */
+    .idea-tarjeta {
+        padding: 0;
+        padding-bottom: 16px;
+    }
+    /* Ajustes para la imagen y texto del autor dentro de la tarjeta de idea */
+    .autor-img {
+        width: 35px;
+        height: 35px;
+    }
+    /* Ajustes para la imagen de la sección de ideas */
+    .idea-img {
+        width: auto;
+        height: 140px;
+        margin-top: 1.3rem;
+    }
+    /* Ajustes para el texto de la sección de ideas */
+    .idea_texto {
+        width: 80%;
+        margin-left: 1rem;
+    }
+    /* Ajustes para el formulario de suscripción */
+    .form-suscripcion input {
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    /* Ajustes para el botón de suscripción */
+    .form-suscripcion button {
+        width: 50%;
+        font-size: 1rem;
+    }
+    /* Ajustes para los elementos de las listas dentro del footer */
+    .listas-footer li {
+        font-size: 0.9rem;
+    }
+}
+/* Ajustes para pantallas con ancho máximo de 320px */
+@media screen and (max-width: 320px) {
+    /* Ajustes para las tarjetas de producto */
+    .producto-tarjeta {
+        max-width: 180px;
+        margin: 1rem 0.2rem;
+    }
+    /* Ajustes para la imagen de la sección de ideas */
+    .idea-img {
+        height: 120px;
+    }
+    /* Ajustes para el texto de la sección de ideas */
+    .idea_texto {
+        margin-left: 0;
+    }
+    /* Ajustes para el contenedor del autor dentro de la tarjeta de idea */
+    .autor-contenedor {
+        text-align: center;
+    }
+    /* Ajustes para el texto del autor dentro de la tarjeta de idea */
+    .autor-texto {
+        margin-left: 0;
+    }
+    /* Ajustes para los elementos de las listas dentro del footer */
+    .listas-footer li {
+        font-size: 0.6rem;
+    }
 }
