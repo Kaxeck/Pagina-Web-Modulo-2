@@ -7,14 +7,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Se define un color de fondo claro para una apariencia limpia */
 body {
     background-color: #F5F7FA;
 }
+
 /* Se define el color de fondo del header */
 header {
     background-color: white;
 }
+
 /* Estilos para la secciones del main
     - Se aplica padding vertical para separar las secciones
 */
@@ -23,25 +26,34 @@ main section {
     padding-bottom: 2.5rem;
     scroll-margin-top: 20px;
 }
+
 /* Se define el color de fondo del footer */
 footer {
     background-color: #34495E;
 }
+
 /* Estilos para los encabezados h1, h2 y h3 */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Poppins", sans-serif;
 }
+
 /* Estilos para párrafos, botones y listas */
-p, button, li {
+p,
+button,
+li {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
 }
+
 /* Estilos específicos para h1 */
 h1 {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
     text-align: center;
 }
+
 /* Estilos específicos para h2 */
 h2 {
     margin-bottom: 2.5rem;
@@ -49,11 +61,13 @@ h2 {
     text-align: center;
     font-weight: 600;
 }
+
 /* Estilos específicos para h3 */
 h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
+
 /* Estilos para el banner superior */
 /* overflow hidden para evitar la barra de scroll */
 .top-banner {
@@ -64,10 +78,12 @@ h3 {
     display: flex;
     overflow: hidden;
 }
+
 /* Estilos para el texto dentro del banner superior */
 .top-banner p {
     font-size: 18px;
 }
+
 /* Contenedor del grupo de texto */
 /* Animación para el texto del banner superior */
 .grupo-banner {
@@ -76,6 +92,7 @@ h3 {
     justify-content: center;
     animation: spin 80s linear infinite;
 }
+
 /* Estilos para los párrafos dentro del banner superior */
 /* Cada párrafo ocupa el 100% del ancho de la ventana */
 .grupo-banner p {
@@ -84,11 +101,18 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
 /* Animación para el texto del banner superior */
 @keyframes spin {
-    from {translate: 0;}
-    to {translate: -100%;}
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
 }
+
 /* Estilos para la barra de navegación
     - Se hace sticky para que permanezca visible al hacer scroll
     - Se aplica un z-index alto para que esté por encima de otros elementos
@@ -103,6 +127,7 @@ h3 {
     top: 0;
     z-index: 1000;
 }
+
 /* Se eliminan los estilos por defecto de la lista de navegación */
 .lista-navegacion {
     list-style: none;
@@ -112,6 +137,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* Se estilizan los enlaces para que no tengan subrayado y tengan un color específico */
 .lista-navegacion a {
     text-decoration: none;
@@ -119,10 +145,12 @@ h3 {
     font-weight: bold;
     font-size: 17px;
 }
+
 /* Icono de menu oculto por defecto */
 .icono-menu {
     display: none;
 }
+
 /* Contenedores de navegación izquierda*/
 .nav-izq {
     display: flex;
@@ -130,12 +158,14 @@ h3 {
     align-items: center;
     gap: 30px;
 }
+
 /* Contenedores de navegación derecha*/
 .nav-der {
     display: flex;
     align-items: center;
     gap: 30px;
 }
+
 /* Contenedor con espacio lateral automático y ancho máximo para promociones */
 .espacio_promociones {
     margin-left: auto;
@@ -143,6 +173,7 @@ h3 {
     max-width: 90%;
     text-align: center;
 }
+
 /* Contenedor con espacio lateral automático y ancho máximo */
 .espacio_lateral {
     margin-left: auto;
@@ -150,18 +181,22 @@ h3 {
     max-width: 80%;
     text-align: center;
 }
+
 /* Estilo para imagen de logo */
 .logo-img {
     width: 120px;
 }
+
 /* Estilo para imagen de home */
 .home-img {
     width: 100%;
 }
-/* Estilo para imagen1 de grid home */ 
+
+/* Estilo para imagen1 de grid home */
 .home1-img {
     grid-column: 1 / 3;
 }
+
 /* Seccion de catalogo */
 /* Tarjeta con espacio lateral automático y ancho máximo para productos */
 .producto-tarjeta {
@@ -176,16 +211,19 @@ h3 {
     position: relative;
     transition: all 0.3s ease;
 }
+
 /* Efecto hover para la tarjeta de producto */
 .producto-tarjeta:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
+
 /* Imagen de tarjeta de producto */
 .producto-img {
     width: 100%;
     border-radius: 1rem;
 }
+
 /* Corazon de tarjeta de producto
     - Posicionado en la esquina superior derecha
     - Posición absoluta relativa a la tarjeta del producto
@@ -199,16 +237,19 @@ h3 {
     color: #BDC3C7;
     cursor: pointer;
 }
+
 /* Efecto hover para el corazon de tarjeta de producto */
 .icono-corazon:hover {
     color: red;
 }
+
 /* Contenedor de precios dentro de la tarjeta de producto */
 .precios {
     text-align: left;
     margin-left: 1rem;
     height: 50px;
 }
+
 /* Estilo de precios original 
     - Texto tachado para indicar precio anterior
     - Color gris claro
@@ -220,6 +261,7 @@ h3 {
     color: #95A5A6;
     margin-right: 1rem;
 }
+
 /* Estilo de precios con descuento 
     - Texto en negrita para resaltar el precio actual
     - Color oscuro para resaltar
@@ -231,6 +273,7 @@ h3 {
     font-weight: bold;
     margin-top: 2px;
 }
+
 /* Estilos para el botón de agregar al carrito dentro de la tarjeta de producto
     - Posicionado en la esquina inferior derecha
     - Botón circular y texto blanco
@@ -252,19 +295,22 @@ h3 {
     cursor: pointer;
     transition: .2s ease;
 }
+
 /* Efecto hover para el botón de agregar al carrito */
 .btn-carrito:hover {
     background-color: #2C3E50;
     color: white;
 }
+
 /* Seccion de ideas */
 /* Contenedor con espacio lateral automático y ancho máximo para ideas */
-.espacio_lateral_idea{
+.espacio_lateral_idea {
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
     text-align: center;
 }
+
 /* Tarjeta individual de idea */
 .idea-tarjeta {
     display: block;
@@ -277,6 +323,7 @@ h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }
+
 /* Imagen de tarjeta de idea */
 .idea-img {
     display: inline-block;
@@ -285,14 +332,17 @@ h3 {
     border-radius: 1rem;
     vertical-align: top;
 }
+
 /* Texto de tarjeta de idea */
 .idea_texto {
     display: inline-block;
     vertical-align: top;
     width: 70%;
     margin-left: 2rem;
-    text-align: left;;
+    text-align: left;
+    ;
 }
+
 /* Contenedor de texto dentro de la tarjeta de producto */
 .texto-contenedor {
     display: inline-block;
@@ -301,6 +351,7 @@ h3 {
     color: #555;
     line-height: 1.6;
 }
+
 /* Contenedor del autor dentro de la tarjeta de idea */
 .autor-contenedor {
     display: inline-block;
@@ -309,6 +360,7 @@ h3 {
     min-height: 0%;
     margin-top: 1rem;
 }
+
 /* Texto del autor dentro de la tarjeta de idea */
 .autor-texto {
     display: inline-block;
@@ -316,6 +368,7 @@ h3 {
     vertical-align: bottom;
     color: #34495E;
 }
+
 /* Imagen del autor dentro de la tarjeta de idea 
     - Imagen circular 45x45px
     - Alineada al texto del autor
@@ -331,30 +384,34 @@ h3 {
     object-fit: cover;
     object-position: center;
 }
+
 /* Estilos para el botón de agregar al carrito */
 /* Badge de producto */
 .producto-badge {
     position: absolute;
     background-color: rgb(255, 0, 0);
     font-family: "Poppins", sans-serif;
-    top : 10px;
+    top: 10px;
     left: 10px;
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
 }
+
 /* Seccion de Servicios */
 /* Contenedor con espacio lateral automático y ancho máximo para ideas */
 .servicios-contenedor {
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%;;
+    max-width: 90%;
+    ;
     display: flex;
     justify-content: center;
     gap: 50px;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 /* Tarjeta de servicio */
 .servicios-card {
     margin-top: 60px;
@@ -364,23 +421,26 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid #F0F0F0;
     padding-top: 30px;
     position: relative;
     transition: all 0.3s ease;
 }
+
 /* Efecto hover para la tarjeta de servicio */
 .servicios-card:hover {
     box-shadow: 0 10px 30px rgba(44, 62, 80, 0.1);
     transform: translateY(-5px);
     border-color: #2C3E50;
 }
+
 /* Estilo para titulo dentro de la tarjeta de servicio */
 .servicios-card h3 {
     margin: 0px;
     color: #34495E;
 }
+
 /* Estilo para parrafo dentro de la tarjeta de servicio */
 .servicios-card p {
     margin: 10px;
@@ -389,6 +449,7 @@ h3 {
     line-height: 1.6;
     padding: 0px 10px;
 }
+
 /* Estilo para icono dentro de la tarjeta de servicio
     - Icono circular posicionado arriba de la tarjeta
     - Color y borde que hacen contraste con el fondo
@@ -408,22 +469,28 @@ h3 {
     position: absolute;
     transition: all 0.3s ease;
 }
+
 /* Efecto hover para el icono dentro de la tarjeta de servicio */
 .servicios-card:hover i {
     background-color: #2C3E50;
     color: white;
     border-color: #2C3E50;
 }
+
 /* Seccion pies de pagina */
 /* Margen y padding para secciones de footer */
 footer section {
     margin: 10px 10px 0px 10px;
     padding: 10px 10px 20px 10px;
 }
+
 /* Color blanco para textos en el footer */
-footer h2, footer h3, footer p {
+footer h2,
+footer h3,
+footer p {
     color: white;
 }
+
 /* Estilos para la sección de newsletter 
     - Fondo de color azul verdoso
     - Uso de Flexbox para distribuir el contenido
@@ -438,6 +505,7 @@ footer h2, footer h3, footer p {
     align-items: center;
     padding: 10px;
 }
+
 /* Estilos para el texto de la newsletter 
     - Uso de Flexbox para organizar el texto en columna
     - Alineación a la izquierda
@@ -451,6 +519,7 @@ footer h2, footer h3, footer p {
     margin: 10px;
     height: 136px;
 }
+
 /* Estilos para el formulario de suscripción 
     - Uso de Flexbox para organizar los elementos en columna
     - Alineación a la izquierda
@@ -466,6 +535,7 @@ footer h2, footer h3, footer p {
     align-items: flex-start;
     justify-content: center;
 }
+
 /* Estilos para los inputs dentro del formulario de suscripción */
 .form-suscripcion input {
     padding: 10px;
@@ -473,6 +543,7 @@ footer h2, footer h3, footer p {
     border-radius: 5px;
     width: 300px;
 }
+
 /* Estilos para el botón dentro del formulario de suscripción */
 .form-suscripcion button {
     padding: 10px;
@@ -483,15 +554,18 @@ footer h2, footer h3, footer p {
     cursor: pointer;
     transition: .2s ease;
 }
+
 /* Efecto hover para el botón del formulario de suscripción */
 .form-suscripcion button:hover {
     background-color: #2C3E50;
 }
+
 /* Estilos para las etiquetas dentro del formulario de suscripción */
 .form-suscripcion label {
     color: white;
     margin-bottom: 10px;
 }
+
 /* Estilos para las listas dentro del footer 
     - Uso de Flexbox para organizar los elementos en fila
     - Espacio de 20px entre los elementos
@@ -501,11 +575,13 @@ footer h2, footer h3, footer p {
     display: flex;
     gap: 20px;
 }
+
 /* Estilos para los elementos de las listas y enlaces dentro del footer 
     - Uso de Flexbox para alinear iconos y texto
     - Justificación centrada verticalmente    
 */
-.listas-footer li, a {
+.listas-footer li,
+a {
     display: flex;
     align-items: center;
     color: white;
@@ -513,10 +589,12 @@ footer h2, footer h3, footer p {
     flex-wrap: wrap;
     margin: 10px 0px;
 }
+
 /* Estilos para la lista de informacion dentro del footer */
 .lista-informacion {
     list-style: none;
 }
+
 /* Estilos para los enlaces dentro de la lista de informacion 
     - Uso de Flexbox para alinear iconos y texto
     - Justificación centrada verticalmente    
@@ -529,6 +607,7 @@ footer h2, footer h3, footer p {
     text-decoration: none;
     margin: 5px 0px;
 }
+
 /* Contenedor para las secciones de contactanos y metodos de pago 
     - Uso de Flexbox para organizar los elementos en fila
     - Espacio distribuido entre los elementos
@@ -542,6 +621,7 @@ footer h2, footer h3, footer p {
     align-items: center;
     margin-top: 20px;
 }
+
 /* Seccion home */
 /* Ajuste de padding para la sección de inicio */
 .home_section {
@@ -550,6 +630,7 @@ footer h2, footer h3, footer p {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 /* Estilo para los títulos h3 dentro de la sección de inicio */
 .home_section h3 {
     margin-bottom: 10px;
@@ -558,6 +639,7 @@ footer h2, footer h3, footer p {
     font-size: 25px;
     font-weight: 600;
 }
+
 /*Boton flotante position fixed
     - Ubicado en la esquina inferior derecha
     - z-index alto para estar por encima de otros elementos
@@ -582,6 +664,7 @@ footer h2, footer h3, footer p {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: .2s ease;
 }
+
 /* Efecto hover para el boton flotante */
 .boton-flotante:hover {
     background-color: white;
@@ -591,56 +674,70 @@ footer h2, footer h3, footer p {
 /* Media Queries para diseño responsivo */
 /* Ajustes para pantallas con ancho máximo de 1024px */
 @media screen and (max-width: 1024px) {
+
     /* Ajustes para el espacio lateral de contenedores */
-    .espacio_promociones, 
-    .espacio_lateral, 
+    .espacio_promociones,
+    .espacio_lateral,
     .espacio_lateral_idea,
     .servicios-contenedor {
-    max-width: 95%;
+        max-width: 95%;
     }
+
     /* Ajustes para la imagen de la sección de ideas */
     .idea-img {
         width: 23%;
     }
+
     /* Mostrar icono de menu */
     .icono-menu {
         display: block;
     }
+
     /* Ocultar secciones de navegación */
     .seccion-nav {
         display: none;
     }
 }
+
 /* Ajustes para pantallas con ancho máximo de 768px */
 @media screen and (max-width: 768px) {
+
     /* Ajustes para el contenedor del banner superior */
     .top-banner {
-    padding: 10px 30px;
+        padding: 10px 30px;
     }
+
     /* Ajustes para el texto del banner superior */
     .top-banner p {
         font-size: 23px;
     }
+
     /* Ajustes para la barra de navegación */
     .navegacion {
         padding: 10px 15px;
     }
+
     /* Ajustes para los elementos de navegación */
-    .nav-izq, .nav-der {
+    .nav-izq,
+    .nav-der {
         gap: 15px;
     }
+
     /* Ajustes para el espacio lateral de contenedores */
-    .espacio_promociones, 
-    .espacio_lateral, 
+    .espacio_promociones,
+    .espacio_lateral,
     .espacio_lateral_idea,
     .servicios-contenedor {
-        max-width: 95%; /* Aprovechar más pantalla en móvil */
+        max-width: 95%;
+        /* Aprovechar más pantalla en móvil */
     }
+
     /* Ajustes para la sección grid de home */
     .home_section {
         grid-template-columns: 1fr;
         gap: 0;
     }
+
     /* Ajustes para los títulos h3 dentro de la sección de home */
     .home_section h3 {
         margin-bottom: 10px;
@@ -649,23 +746,28 @@ footer h2, footer h3, footer p {
         font-size: 30px;
         font-weight: 600;
     }
+
     /* Ajustes para las imágenes dentro de la sección de home */
     .home2-img {
         grid-row: 2 / 3;
     }
+
     .home3-img {
         grid-row: 3 / 4;
     }
+
     /* Ajustes para las tarjetas de producto */
     .producto-tarjeta {
         width: 100%;
         max-width: 260px;
         margin: 1rem 1rem;
     }
+
     /* Ajustes para las tarjetas de idea */
     .idea-tarjeta {
         margin-bottom: 1.5rem;
     }
+
     /* Ajustes para la imagen de la sección de ideas */
     .idea-img {
         width: auto;
@@ -673,27 +775,32 @@ footer h2, footer h3, footer p {
         margin-bottom: 1.3rem;
         margin-top: 3rem;
     }
+
     /* Ajustes para el texto de la sección de newsletter */
     .newsletter {
         flex-direction: column;
         align-items: flex-start;
     }
+
     /* Ajustes para el contenedor de newsletter */
     .contenedor-newsletter {
         width: 95%;
     }
+
     /* Ajustes para el formulario de suscripción */
     .form-suscripcion {
         height: auto;
         margin-bottom: 30px;
-        
+
     }
+
     /* Ajustes para el contenedor del formulario de suscripción */
     .contenedor-form-suscripcion {
         display: flex;
         width: 100%;
         align-items: center;
     }
+
     /* Ajustes para los inputs de suscripción */
     .form-suscripcion input {
         width: 70%;
@@ -701,93 +808,114 @@ footer h2, footer h3, footer p {
         margin-right: 4px;
         font-size: 1rem;
     }
+
     /* Ajustes para el botón de suscripción */
     .form-suscripcion button {
         width: 25%;
         height: 45px;
         font-size: 1.1rem;
     }
+
     /* Ajustes para el contenedor de contactanos y metodos de pago */
     .contactanos-pagos {
         align-items: flex-start;
         margin-right: 1rem;
     }
 }
+
 /* Ajustes para pantallas con ancho máximo de 480px */
 @media screen and (max-width: 480px) {
+
     /* Ajustes para la barra de navegación */
-    .nav-izq, .nav-der {
+    .nav-izq,
+    .nav-der {
         gap: 10px;
     }
+
     /* Ajustes para las tarjetas de producto */
     .producto-tarjeta {
         width: 100%;
         max-width: 220px;
         margin: 1rem 0.5rem;
     }
+
     /* Ajustes para las tarjetas de idea */
     .idea-tarjeta {
         padding: 0;
         padding-bottom: 16px;
     }
+
     /* Ajustes para la imagen y texto del autor dentro de la tarjeta de idea */
     .autor-img {
         width: 35px;
         height: 35px;
     }
+
     /* Ajustes para la imagen de la sección de ideas */
     .idea-img {
         width: auto;
         height: 140px;
         margin-top: 1.3rem;
     }
+
     /* Ajustes para el texto de la sección de ideas */
     .idea_texto {
         width: 80%;
         margin-left: 1rem;
     }
+
     /* Ajustes para el formulario de suscripción */
     .form-suscripcion input {
         width: 50%;
         font-size: 0.9rem;
     }
+
     /* Ajustes para el botón de suscripción */
     .form-suscripcion button {
         width: 50%;
         font-size: 1rem;
     }
+
     /* Ajustes para los elementos de las listas dentro del footer */
     .listas-footer li {
         font-size: 0.9rem;
     }
 }
+
 /* Ajustes para pantallas con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
+
     /* Ajustes para el texto del banner superior */
     .top-banner p {
         font-size: 15px;
     }
+
     /* Ajustes para las tarjetas de producto */
     .producto-tarjeta {
         max-width: 180px;
         margin: 1rem 0.2rem;
     }
+
     /* Ajustes para la imagen de la sección de ideas */
     .idea-img {
         height: 120px;
     }
+
     /* Ajustes para el texto de la sección de ideas */
     .idea_texto {
         margin-left: 0;
     }
+
     /* Ajustes para el contenedor del autor dentro de la tarjeta de idea */
     .autor-contenedor {
         text-align: center;
     }
+
     /* Ajustes para el texto del autor dentro de la tarjeta de idea */
     .autor-texto {
         margin-left: 0;
     }
+
     /* Ajustes para los elementos de las listas dentro del footer */
     .listas-footer li {
         font-size: 0.6rem;
