@@ -55,12 +55,39 @@ h3 {
     font-size: 1.5rem;
 }
 /* Estilos para el banner superior */
+/* overflow hidden para evitar la barra de scroll */
 .top-banner {
     background-color: #2C3E50;
     color: white;
     text-align: center;
-    padding: 6px 10px;
-    font-size: 14px;
+    padding: 10px 20px;
+    display: flex;
+    overflow: hidden;
+}
+/* Estilos para el texto dentro del banner superior */
+.top-banner p {
+    font-size: 18px;
+}
+/* Contenedor del grupo de texto */
+/* Animación para el texto del banner superior */
+.grupo-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 80s linear infinite;
+}
+/* Estilos para los párrafos dentro del banner superior */
+/* Cada párrafo ocupa el 100% del ancho de la ventana */
+.grupo-banner p {
+    flex: 0 0 100vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+/* Animación para el texto del banner superior */
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
 /* Estilos para la barra de navegación
     - Se hace sticky para que permanezca visible al hacer scroll
@@ -96,17 +123,20 @@ h3 {
 .icono-menu {
     display: none;
 }
+/* Contenedores de navegación izquierda*/
 .nav-izq {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
 }
+/* Contenedores de navegación derecha*/
 .nav-der {
     display: flex;
     align-items: center;
     gap: 30px;
 }
+/* Contenedor con espacio lateral automático y ancho máximo para promociones */
 .espacio_promociones {
     margin-left: auto;
     margin-right: auto;
@@ -583,6 +613,14 @@ footer h2, footer h3, footer p {
 }
 /* Ajustes para pantallas con ancho máximo de 768px */
 @media screen and (max-width: 768px) {
+    /* Ajustes para el contenedor del banner superior */
+    .top-banner {
+    padding: 10px 30px;
+    }
+    /* Ajustes para el texto del banner superior */
+    .top-banner p {
+        font-size: 23px;
+    }
     /* Ajustes para la barra de navegación */
     .navegacion {
         padding: 10px 15px;
@@ -598,18 +636,20 @@ footer h2, footer h3, footer p {
     .servicios-contenedor {
         max-width: 95%; /* Aprovechar más pantalla en móvil */
     }
-
+    /* Ajustes para la sección grid de home */
     .home_section {
-    grid-template-columns: 1fr;
-    gap: 0;
+        grid-template-columns: 1fr;
+        gap: 0;
     }
+    /* Ajustes para los títulos h3 dentro de la sección de home */
     .home_section h3 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-}
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    /* Ajustes para las imágenes dentro de la sección de home */
     .home2-img {
         grid-row: 2 / 3;
     }
@@ -723,6 +763,10 @@ footer h2, footer h3, footer p {
 }
 /* Ajustes para pantallas con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
+    /* Ajustes para el texto del banner superior */
+    .top-banner p {
+        font-size: 15px;
+    }
     /* Ajustes para las tarjetas de producto */
     .producto-tarjeta {
         max-width: 180px;
