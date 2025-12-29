@@ -759,9 +759,8 @@ a {
     /* Cuando el checkbox está marcado, mostrar el contenedor de navegación */
     .checkbox:checked ~ .lista-navegacion .nav-izq .contenedor-navsection {
         display: flex;
-    /* Ajuste de altura para que no sobrepase la pantalla */
     }
-
+    
     /* Estilos para las secciones de navegación */
     .seccion-nav {
         width: 100%;
