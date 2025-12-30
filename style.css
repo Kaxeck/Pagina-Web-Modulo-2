@@ -246,6 +246,7 @@ h3 {
     align-items: center;
     justify-content: flex-start;
     overflow-x: auto;
+    padding-top: 5px;
 }
 
 /* Ocultar scrollbar en navegador*/
